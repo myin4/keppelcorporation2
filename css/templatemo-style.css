@@ -7,6 +7,7 @@ https://templatemo.com/tm-516-known
 */
 
   @import url('https://fonts.googleapis.com/css?family=Muli:300,700|Nunito');
+  @import url('https://css.gg/mail.css');
 
   body {
     background: #ffffff;
@@ -179,7 +180,33 @@ https://templatemo.com/tm-516-known
   }
 
 
+  .gg-mail,
+  .gg-mail::after {
+      display: block;
+      box-sizing: border-box;
+      height: 14px;
+      border: 2px solid
+  }
 
+  .gg-mail {
+      overflow: hidden;
+      transform: scale(var(--ggs,1));
+      position: relative;
+      width: 18px;
+      border-radius: 2px
+  }
+
+  .gg-mail::after {
+      content: "";
+      position: absolute;
+      border-radius: 3px;
+      width: 14px;
+      transform: rotate(-45deg);
+      bottom: 3px;
+      left: 0
+  }
+  
+  
   /*---------------------------------------
      BUTTONS               
   -----------------------------------------*/
